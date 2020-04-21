@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertAsset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/form_background_back"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="630dp"
+            android:layout_gravity="center_vertical"
+
+            android:layout_margin="30dp"
+            android:background="@drawable/form_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="693dp"
+                        android:layout_margin="30dp"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:fontFamily="@font/poppinsmedium"
+                            android:id="@+id/jenis_mesin"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center_horizontal"
+                            android:text="Inspection condition"
+                            android:textAlignment="center">
+
+                        </TextView>
+
+
+                        <EditText
+                            android:id="@+id/engineHM"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:backgroundTint="#D1C9C9"
+                            android:fontFamily="@font/poppinslight"
+                            android:hint="Engine HM"
+                            android:inputType="textPassword"
+                            android:paddingLeft="20dp"
+                            android:textColorHint="#0E0909"
+                            android:textSize="14sp"  />
+
+                        <EditText
+                            android:id="@+id/container_counter"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:backgroundTint="#D1C9C9"
+                            android:fontFamily="@font/poppinslight"
+                            android:hint="Container counter"
+                            android:inputType="textPassword"
+                            android:paddingLeft="20dp"
+                            android:textColorHint="#0E0909"
+                            android:textSize="14sp"  />
+
+
+                        <TextView
+                            android:fontFamily="@font/poppinsreguller"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Engine Oil Level"
+                            android:textColor="#000">
+
+                        </TextView>
+
+                        <RadioGroup
+                            android:id="@+id/EngineOilLevel"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_marginTop="10dp">
+
+                            <RadioButton
+                                android:id="@+id/RadioWaterTrue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ok" />
+
+                            <RadioButton
+                                android:id="@+id/RadioWaterFalse"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="no" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:fontFamily="@font/poppinsreguller"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Radio Water Level"
+                            android:textColor="#000">
+
+                        </TextView>
+
+                        <RadioGroup
+                            android:id="@+id/RadioWaterLevel"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <RadioButton
+                                android:fontFamily="@font/poppinsreguller"
+                                android:id="@+id/True"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ok" />
+
+                            <RadioButton
+                                android:id="@+id/False"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="no" android:fontFamily="@font/poppinsreguller" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Spreader Indicator"
+                            android:textColor="#000" android:fontFamily="@font/poppinsreguller">
+
+                        </TextView>
+
+                        <RadioGroup
+                            android:id="@+id/IndicatorSpreader"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_marginTop="10dp">
+
+                            <RadioButton
+                                android:fontFamily="@font/poppinsreguller"
+                                android:id="@+id/TrueSpreader"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ok" />
+
+                            <RadioButton
+                                android:fontFamily="@font/poppinsreguller"
+
+                                android:id="@+id/FalseSpreader"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="no" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:fontFamily="@font/poppinsreguller"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Oil Fuel leakage"
+                            android:textColor="#000">
+
+                        </TextView>
+
+                        <RadioGroup
+                            android:id="@+id/OilFuel"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_marginTop="10dp">
+
+                            <RadioButton
+                                android:fontFamily="@font/poppinsreguller"
+                                android:id="@+id/TrueOilFuel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ok" />
+
+                            <RadioButton
+                                android:fontFamily="@font/poppinsreguller"
+                                android:id="@+id/FalseOilFuel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="no" />
+                        </RadioGroup>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/Save"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppinsreguller"
+                                android:gravity="clip_horizontal"
+                                android:text="save" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/InputChecklist"
+                    style="@android:style/Widget.Button.Small"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppinsreguller"
+                    android:text="Save">
+
+
+                </Button>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

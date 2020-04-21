@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertAsset">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/form_background_back"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_gravity="center_vertical"
+
+        android:layout_margin="30dp"
+        android:background="@drawable/form_background"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Spinner
+
+
+            android:id="@+id/JenisAsset"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+
+            android:dropDownWidth="wrap_content"
+            android:entries="@android:array/organizationTypes"
+            android:spinnerMode="dropdown"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Machine Status"
+            android:textSize="20dp" />
+
+
+        <RadioGroup
+            android:id="@+id/Status"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            >
+
+            <RadioButton
+                android:id="@+id/operate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsreguller"
+                android:text="Operate" />
+
+            <RadioButton
+                android:id="@+id/standby"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsreguller"
+                android:text="Standby" />
+
+            <RadioButton
+                android:id="@+id/breakdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsreguller"
+                android:text="Breakdown" />
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="170dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Damage "
+                    android:fontFamily="@font/poppinslight"
+                    android:gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="170dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="condition "
+                    android:fontFamily="@font/poppinslight"
+                    android:gravity="center_horizontal">
+                    
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+       
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/InputChecklist"
+                style="@android:style/Widget.Button.Small"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppinsreguller"
+                android:text="Save">
+
+
+            </Button>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</LinearLayout>

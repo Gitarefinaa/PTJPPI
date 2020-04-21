@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Design.Light.NoActionBar"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/ipc"
+        android:backgroundTint="#804A4747"
+        android:backgroundTintMode="src_over"
+        android:orientation="vertical"
+        android:scaleType="fitCenter"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp"
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ipc2" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_margin="25dp"
+            android:background="@drawable/form_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/username"
+                    style="@android:style/Widget.AutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:backgroundTint="#D1C9C9"
+                    android:fontFamily="@font/poppinslight"
+                    android:hint="Username"
+                    android:lineSpacingExtra="8sp"
+                    android:paddingLeft="20dp"
+
+
+                    android:textColorHighlight="#716464"
+                    android:textColorHint="#0E0909"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#D1C9C9"
+                    android:fontFamily="@font/poppinslight"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#0E0909"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+
+                >
+
+
+                <Button
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/login"
+                    style="@android:style/Widget.Holo.Button.Borderless.Small"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_login"
+                    android:elevation="1dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Sign in"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:elevation="10dp"
+                    android:outlineAmbientShadowColor="#fff"
+                    android:outlineSpotShadowColor="#ffff"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="developed by Githa Refina"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppinslight"
+            android:text="Gita.refina1@gmail.com"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
